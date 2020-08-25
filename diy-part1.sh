@@ -96,7 +96,7 @@ git clone --depth=1 https://github.com/destan19/OpenAppFilter
 popd
 
 # Fix libssh
-pushd feeds/packages/libs
-rm -rf libssh
-svn co https://github.com/openwrt/packages/trunk/libs/libssh
-popd
+# pushd feeds/packages/libs
+# rm -rf libssh
+# svn co https://github.com/openwrt/packages/trunk/libs/libssh
+# popd
