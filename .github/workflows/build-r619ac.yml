@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Build gdock
+name: Build r619ac
 
 on:
   repository_dispatch:
