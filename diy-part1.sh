@@ -12,8 +12,8 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Lienol/openwrt-package
-#sed -i '$a src-git lienol https://github.com/TinyTitanPro/lienol-openwrt-package.git' feeds.conf.default
-#sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+sed -i '$a src-git lienol https://github.com/TinyTitanPro/lienol-openwrt-package.git' feeds.conf.default
+sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
 #=================================================
 # Description: DIY script
@@ -39,7 +39,7 @@ mkdir package/community
 pushd package/community
 
 # Add Lienol's Packages
-git clone --depth=1 https://github.com/SuLingGG/openwrt-package
+# git clone --depth=1 https://github.com/SuLingGG/openwrt-package
 
 # Add mentohust & luci-app-mentohust.
 git clone --depth=1 https://github.com/BoringCat/luci-app-mentohust
