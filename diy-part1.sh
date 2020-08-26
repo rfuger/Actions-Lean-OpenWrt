@@ -27,6 +27,11 @@
 # Add luci-app-ssr-plus
 pushd package/lean
 git clone --depth=1 https://github.com/fw876/helloworld
+
+# Add luci-app-vssr [Hello World] 不能和luci-app-ssr-plus同时选择
+#git lua-maxminddb 依赖
+git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git  
+git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr.git  
 popd
 
 # Clone community packages to package/community
