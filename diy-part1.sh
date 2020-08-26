@@ -42,11 +42,11 @@ pushd package/community
 # git clone --depth=1 https://github.com/SuLingGG/openwrt-package
 
 # Add mentohust & luci-app-mentohust.
-git clone --depth=1 https://github.com/BoringCat/luci-app-mentohust
-git clone --depth=1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk
+# git clone --depth=1 https://github.com/BoringCat/luci-app-mentohust
+# git clone --depth=1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk
 
 # Add ServerChan
-git clone --depth=1 https://github.com/tty228/luci-app-serverchan
+# git clone --depth=1 https://github.com/tty228/luci-app-serverchan
 
 # Add OpenClash
 git clone --depth=1 -b master https://github.com/vernesong/OpenClash
@@ -57,14 +57,6 @@ git clone --depth=1 https://github.com/rufengsuixing/luci-app-onliner
 # Add luci-app-adguardhome
 git clone --depth=1 https://github.com/rufengsuixing/luci-app-adguardhome
 
-# Add Rclone-OpenWrt
-git clone --depth=1 https://github.com/ElonH/Rclone-OpenWrt
-
-# Add luci-app-diskman
-git clone --depth=1 https://github.com/lisaac/luci-app-diskman
-mkdir parted
-cp luci-app-diskman/Parted.Makefile parted/Makefile
-
 # Add luci-app-dockerman
 git clone --depth=1 https://github.com/KFERMercer/luci-app-dockerman
 mkdir luci-lib-docker
@@ -72,32 +64,32 @@ curl -s -o ./luci-lib-docker/Makefile https://raw.githubusercontent.com/lisaac/l
 rm -rf ../lean/luci-app-docker
 
 # Add luci-theme-argon
-git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
-rm -rf ../lean/luci-theme-argon
+# git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
+# rm -rf ../lean/luci-theme-argon
 
 # Add tmate
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/tmate
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/msgpack-c
+# svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/tmate
+# svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/msgpack-c
 
 # Add gotop
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/gotop
+# svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/gotop
 
 # Subscribe converters
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/subconverter
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/jpcre2
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/rapidjson
+# svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/subconverter
+# svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/jpcre2
+# svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/rapidjson
 
 # Add smartdns
 svn co https://github.com/pymumu/smartdns/trunk/package/openwrt ../smartdns
 svn co https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t/luci-app-smartdns ../luci-app-smartdns
 
 # Add udptools
-git clone --depth=1 https://github.com/bao3/openwrt-udp2raw
-git clone --depth=1 https://github.com/bao3/openwrt-udpspeeder
-git clone --depth=1 https://github.com/bao3/luci-udptools
+# git clone --depth=1 https://github.com/bao3/openwrt-udp2raw
+# git clone --depth=1 https://github.com/bao3/openwrt-udpspeeder
+# git clone --depth=1 https://github.com/bao3/luci-udptools
 
 # Add OpenAppFilter
-git clone --depth=1 https://github.com/destan19/OpenAppFilter
+# git clone --depth=1 https://github.com/destan19/OpenAppFilter
 popd
 
 # Fix libssh
